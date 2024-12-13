@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Start Quiz</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; /* Align items to the bottom */
+      position: relative;
+    }
+
+    .container {
+      position: absolute;
+      bottom: 25%; /* Position the container a quarter way up from the bottom */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .input, .select, .button {
+      margin: 5px;
+      vertical-align: top;
+    }
+
+    .button {
+      width: 150px; /* Increase the width of the button */
+      text-align: center; /* Ensure text is centered horizontally */
+      display: inline-flex; /* Use flexbox for alignment */
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      /* Remove height if it's set to ensure padding controls the size */
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <select id="cmbQuizType" class="select"></select>
+  <input type="text" id="txtNumberOfQuestions" class="input" style="color: gray;">
+  <button id="btnStartQuiz" class="button">Start Quiz</button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

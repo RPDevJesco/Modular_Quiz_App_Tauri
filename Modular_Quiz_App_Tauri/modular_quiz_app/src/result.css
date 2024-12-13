@@ -1,0 +1,28 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px; /* Match the WPF design width */
+    height: 450px; /* Match the WPF design height */
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.results {
+    height: calc(100% - 50px); /* Leave space for the button */
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.back-to-main {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
